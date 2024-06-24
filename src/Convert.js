@@ -1,0 +1,202 @@
+function convertToFullHTML(content) {
+  const fullHTML = `
+      <!DOCTYPE html>
+      <html lang="en">
+        <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Generative AI: Insights from a BCG Study</title>
+          <link rel="stylesheet" href="styles11.css" />
+        </head>
+        <body>
+          <div class="container">
+            ${content}
+          </div>
+        </body>
+      </html>
+    `
+  return fullHTML
+}
+
+// Sample content to be converted
+const content = `
+    <p>
+      <a href="https://sanctity.ai/what-is-ai-a-beginners-introduction-to-artificial-intelligence/">
+        Artificial intelligence
+      </a>
+      is advancing rapidly, and one of the most exciting frontiers is
+      <strong>generative AI</strong>. Systems like GPT-4 and
+      <a href="https://openai.com/dall-e-3" target="_blank" rel="noreferrer noopener">
+        DALL-E 3
+      </a>
+      can now generate remarkably high-quality text, images, code, and more from simple prompts.
+      A new
+      <a href="https://www.bcg.com/publications/2023/how-people-create-and-destroy-value-with-gen-ai">
+        BCG study on GenAI
+      </a>
+      in collaboration with leading academics, including Harvard and MIT, provides incredible insights into these questions.
+    </p>
+  
+    <ul>
+      <li>The potential for generative AI to disrupt businesses and industries is massive.</li>
+    </ul>
+  
+    <p>But questions remain:</p>
+  
+    <ul>
+      <li>Where and how can generative AI create tremendous value?</li>
+      <li>What are the potential downsides if deployed poorly?</li>
+      <li>Just how competent are these systems today?</li>
+    </ul>
+  
+    <figure class="wp-block-image size-large">
+      <img loading="lazy" decoding="async" width="1280" height="720" src="https://sanctity.ai/wp-content/uploads/2023/09/pexels-alexander-suhorucov-6457490-edited.jpg" alt="" class="wp-image-8683" />
+    </figure>
+  
+    <p>
+      A fascinating new
+      <a href="https://www.bcg.com/publications/2023/how-people-create-and-destroy-value-with-gen-ai">
+        study from BCG
+      </a>
+      in collaboration with leading academics provides incredible insights into these questions.
+    </p>
+  
+    <h2 class="wp-block-heading">About the Research Study</h2>
+  
+    <ul>
+      <li>Conducted with over 750 consultants from BCG worldwide</li>
+      <li>Tested generative AI on real-world business tasks:</li>
+      <li>Creative product innovation and ideation</li>
+      <li>Complex business problem solving using qualitative and quantitative data</li>
+      <li>Measured performance when using AI vs. not using AI</li>
+    </ul>
+  
+    <h2 class="wp-block-heading">Key Finding 1: Massive Upside for Creative Ideation</h2>
+  
+    <figure class="wp-block-image size-large">
+      <img loading="lazy" decoding="async" width="1280" height="720" src="https://sanctity.ai/wp-content/uploads/2023/09/pexels-andrea-piacquadio-3973059-edited.jpg" alt="" class="wp-image-8687" />
+    </figure>
+  
+    <p>When used for creative ideation and content generation, the AI delivered striking results:</p>
+  
+    <ul>
+      <li><strong>Around 90%</strong> of participants created <strong>higher quality output</strong> when using the AI</li>
+      <li>On average, they achieved <strong>40% better performance</strong> compared to those doing the task without AI</li>
+      <li>Even top performers boosted results by <strong>17%</strong> with the AI over their own unaided work</li>
+    </ul>
+  
+    <p><strong>The best approach</strong> was simply to use the AI’s output directly, without trying to edit or enhance it.</p>
+  
+    <ul>
+      <li>Editing the AI text reduced performance – quality dropped <strong>17 percentile points</strong> for every <strong>10%</strong> of divergence from the original.</li>
+    </ul>
+  
+    <p>For creative tasks, today’s AI often surpasses what even highly skilled professionals can produce on their own.</p>
+  
+    <h2 class="wp-block-heading">Key Finding 2: Major Risks of Overreliance</h2>
+  
+    <figure class="wp-block-image size-large">
+      <img loading="lazy" decoding="async" width="1280" height="720" src="https://sanctity.ai/wp-content/uploads/2023/09/pexels-lukas-669622-edited.jpg" alt="" class="wp-image-8685" />
+    </figure>
+  
+    <p>However, for complex business problem solving, the story was very different:</p>
+  
+    <ul>
+      <li>Participants performed <strong>23% worse</strong> when using the AI versus doing the task unaided</li>
+      <li>Despite warnings, many accepted the AI’s wrong answers as valid</li>
+      <li>Providing basic training did not help, and actually resulted in <strong>even worse performance</strong>, potentially indicating <strong>overconfidence</strong> in one’s ability to apply the AI appropriately</li>
+    </ul>
+  
+    <p>Unlike narrowly defined content creation, synthesizing messy real-world data to make nuanced judgements remains firmly outside today’s AI capabilities.</p>
+  
+    <p>Leaders must be exceedingly wary of overreliance risks on tasks requiring true comprehension beyond pattern recognition.</p>
+  
+    <h2 class="wp-block-heading">Key Finding 3: Creativity Tradeoffs</h2>
+  
+    <figure class="wp-block-image size-large">
+      <img loading="lazy" decoding="async" width="1280" height="720" src="https://sanctity.ai/wp-content/uploads/2023/09/pexels-joao-jesus-2480072-edited.jpg" alt="" class="wp-image-8689" />
+    </figure>
+  
+    <p>While the AI boosted individual creative output, some concerning tradeoffs emerged:</p>
+  
+    <ul>
+      <li>Collectively, ideas became <strong>41% less diverse</strong></li>
+      <li>70% worried relying too much on AI could reduce their own creative abilities long-term</li>
+    </ul>
+  
+    <p>Leaders must remain vigilant that applying generative AI does not reduce workforce creativity over time.</p>
+  
+    <h2 class="wp-block-heading">Implications for Leaders</h2>
+  
+    <figure class="wp-block-image size-large">
+      <img loading="lazy" decoding="async" width="1280" height="720" src="https://sanctity.ai/wp-content/uploads/2023/09/pexels-fauxels-3183150-edited.jpg" alt="" class="wp-image-8691" />
+    </figure>
+  
+    <p>Realizing the massive potential of AI while avoiding pitfalls requires rethinking how it is deployed:</p>
+  
+    <ul>
+      <li>Invest heavily in <strong>internal data infrastructure</strong> to train models</li>
+      <li>Identify tasks where today’s AI excels, and reengineer workflows</li>
+      <li>Plan workforce strategies to leverage complementary human-AI capabilities</li>
+      <li>Continually test applications rigorously as AI progresses rapidly</li>
+    </ul>
+  
+    <p>The scale of disruption will depend on how wisely leaders implement AI. With the right strategies, generative AI can enable tremendous competitive advantage.</p>
+  
+    <h2 class="wp-block-heading">Key Takeaways from BCG Study on GenAI</h2>
+  
+    <p><strong>Critical insights for leaders:</strong></p>
+  
+    <ul>
+      <li>Generative AI already excels at creative ideation beyond most professionals</li>
+      <li>But it still falls short on complex real-world reasoning</li>
+      <li>Overuse can reduce creativity diversity and individual abilities</li>
+      <li>Realizing massive benefits requires rethinking roles, strategies, and workflows</li>
+    </ul>
+  
+    <p><strong>Leaders should:</strong></p>
+  
+    <ul>
+      <li>Catalog tasks where AI excels and redesign workflows</li>
+      <li>Identify decisions still requiring human judgement</li>
+      <li>Develop data capabilities to train models</li>
+      <li>Begin realigning workforce strategies</li>
+      <li>Build rigorous testing regimes</li>
+      <li>Monitor for declines in workforce creativity</li>
+      <li>Make adaptivity a core competency</li>
+    </ul>
+  
+    <figure class="wp-block-table">
+      <table>
+        <tbody>
+          <tr>
+            <td><strong>Creative Ideation</strong></td>
+            <td><strong>Complex Problem Solving</strong></td>
+          </tr>
+          <tr>
+            <td>AI excels</td>
+            <td>AI falls short</td>
+          </tr>
+          <tr>
+            <td>Surpasses most professionals</td>
+            <td>Requires true comprehension</td>
+          </tr>
+          <tr>
+            <td>Boosts performance</td>
+            <td>High risks of overreliance</td>
+          </tr>
+          <tr>
+            <td>Quality degrades if edited</td>
+            <td>Wrong answers often accepted</td>
+          </tr>
+          <tr>
+            <td>Reduces creativity diversity</td>
+            <td>Basic training unhelpful</td>
+          </tr>
+        </tbody>
+      </table>
+    </figure>
+  `
+
+const fullHTMLDocument = convertToFullHTML(content)
+console.log(fullHTMLDocument)

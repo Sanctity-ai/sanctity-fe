@@ -1,0 +1,220 @@
+/* General Page Styles */
+
+body {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.8); /* Decreased opacity for general text */
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  padding: 10px;
+  margin: 0;
+}
+
+.Header-Blog {
+  background-image: url('https://sanctity.ai/wp-content/uploads/2023/08/sanctity.ai_A_dynamic_image_that_showcases_various_real-world_a_0d6218f0-7f14-4260-85cf-b24aa7c0d453-1024x574.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 500px; /* Adjust the height as needed */
+  width: 100%;
+  border: 3px solid rgba(255, 255, 255, 0.8); /* Decreased opacity for border */
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transitions */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add initial 3D drop shadow */
+}
+
+.Header-Blog:hover {
+  transform: perspective(1000px) rotateY(10deg); /* Adjust perspective and rotation angle */
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.4); /* White drop shadow on hover */
+}
+
+/* Centered Image Styles */
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid rgba(255, 255, 255, 0.8); /* Decreased opacity for border */
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transitions */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add initial 3D drop shadow */
+}
+
+.center-image:hover {
+  transform: perspective(1000px) rotateY(20deg); /* Adjust perspective and rotation angle */
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.4); /* White drop shadow on hover */
+}
+
+.MainHeading {
+  font-size: 2em; /* Decreased from 2.5em */
+  color: white; /* Decreased opacity for headings */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 3px; /* Reduced top margin */
+  margin-bottom: 10px; /* Reduced bottom margin */
+}
+
+/* Headings Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgba(255, 99, 71, 0.8); /* Decreased opacity for headings */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 3px; /* Reduced top margin */
+  margin-bottom: 3px; /* Reduced bottom margin */
+}
+
+h1 {
+  font-size: 2em; /* Decreased from 2.5em */
+  padding-bottom: 3px; /* Reduced padding */
+}
+
+h2 {
+  font-size: 1.75em; /* Decreased from 2em */
+  padding-bottom: 3px; /* Reduced padding */
+}
+
+h3 {
+  font-size: 1.5em; /* Decreased from 1.75em */
+  padding-bottom: 2px; /* Reduced padding */
+}
+
+h4 {
+  font-size: 1.25em; /* Decreased from 1.5em */
+  padding-bottom: 2px; /* Reduced padding */
+}
+
+h5 {
+  font-size: 1em; /* Decreased from 1.25em */
+  padding-bottom: 1px; /* Reduced padding */
+}
+
+h6 {
+  font-size: 0.875em; /* Decreased from 1em */
+}
+
+/* Paragraph and Link Styles */
+p {
+  margin-bottom: 5px; /* Reduced bottom margin */
+}
+
+a {
+  color: rgba(0, 191, 255, 0.8); /* Decreased opacity for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: rgba(255, 99, 71, 0.8); /* Decreased opacity for hover color */
+  text-decoration: underline;
+}
+
+/* Blockquote Styles */
+blockquote {
+  background-color: #333;
+  border-left: 5px solid rgba(255, 99, 71, 0.8); /* Decreased opacity for border */
+  color: rgba(221, 221, 221, 0.8); /* Decreased opacity for text */
+  padding: 10px 20px;
+  margin: 10px 0; /* Reduced margins */
+  font-style: italic;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+/* Code Block Styles */
+pre,
+code {
+  background-color: #444;
+  color: rgba(0, 255, 0, 0.8); /* Decreased opacity for code text */
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* List Styles */
+ul,
+ol {
+  margin: 10px 0; /* Reduced margins */
+  padding-left: 30px; /* Reduced padding */
+}
+
+li {
+  margin-bottom: 5px; /* Reduced bottom margin */
+}
+
+li::marker {
+  color: rgba(255, 99, 71, 0.8); /* Decreased opacity for list markers */
+}
+
+.headingHR {
+  border: 0;
+  height: 2px;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Decreased opacity for horizontal lines */
+  margin: 20px 0; /* Adjust margins as needed */
+  width: 90%; /* Make horizontal lines shorter */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Horizontal Line Styles */
+hr {
+  border: 0;
+  height: 5px;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Decreased opacity for horizontal lines */
+  margin: 20px 0; /* Adjust margins as needed */
+  width: 60%; /* Make horizontal lines shorter */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0; /* Adjust margins as needed */
+  border: 2px solid rgba(255, 255, 255, 0.8); /* Decreased opacity for border */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add 3D drop shadow */
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.8); /* Decreased opacity for border */
+}
+
+th {
+  background-color: rgba(
+    255,
+    99,
+    71,
+    0.8
+  ); /* Decreased opacity for header background */
+  color: black;
+}
+
+td {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Decreased opacity for cell background */
+  color: rgba(255, 255, 255, 0.8); /* Decreased opacity for cell text */
+}
+
+table tr:nth-child(even) td {
+  background-color: rgba(0, 0, 0, 0.8); /* Decreased opacity for even rows */
+}

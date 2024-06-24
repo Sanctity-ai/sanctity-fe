@@ -33,6 +33,7 @@ const Home = () => {
             authorName: item.author_info_v2.name,
             authorAvatar: '/assets/images/author.jpg',
             cover: item.featured_image_urls_v2.tenweb_optimizer_mobile[0],
+            slug: slug,
           }
         })
 

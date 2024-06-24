@@ -1,8 +1,9 @@
+import './styles.css'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Chip from '../../../common/Chip'
-import './styles.css'
 import { motion } from 'framer-motion'
+import { useNavigate } from 'react-router-dom'
 
 const BlogItem = ({
   blog: {
@@ -14,13 +15,23 @@ const BlogItem = ({
     cover,
     category,
     id,
+    content,
+    slug,
   },
 }) => {
+  const navigate = useNavigate()
+  const handleClick = () => {
+    navigate(`/blog/${slug}/${id}`, { state: { id } })
+  }
   return (
     <motion.div
-      whileHover={{}}
-      whileTap={{ scale: 0.9 }}
+      whileHover={{
+        scale: 0.8,
+        rotate: -5,
+      }}
+      whileTap={{ scale: 0.9, rotate: -1 }}
       className="blogItem-wrap"
+      onClick={handleClick}
     >
       <motion.img className="blogItem-cover" src={cover} alt="cover" />
       <Chip label={category} />

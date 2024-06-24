@@ -14,6 +14,7 @@ import Homes from './Homes'
 import Navbar from './Navbar'
 import About from './About'
 import Fruits from './Fruits'
+import SeperateBlog from './components/Home/BlogList/BlogItem/SeperateBlog'
 
 export default function App() {
   return (
@@ -26,6 +27,8 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Fruits />} />
           <Route path="/blog/:slug" element={<Home />} />
+          {/* New route for blog post with both slug and ID */}
+          <Route path="/blog/:slug/:id" element={<SeperateBlog />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
